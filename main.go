@@ -75,6 +75,7 @@ func main() {
 
 		req, err := http.NewRequest("POST", "https://slack.com/api/chat.postMessage", bytes.NewBuffer(jsonStr))
 		req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("X-Slack-No-Retry", "1")
 		req.Header.Set("Authorization", os.Getenv("SLACK_BOT_TOKEN"))
 
 		client := &http.Client{}
