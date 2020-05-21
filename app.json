@@ -1,0 +1,7 @@
+{
+	"name": "Slack BOT - Inbound WhoIsOnCall",
+	"description": "Show information about WhoIsOnCall from WMS-Inbound Team",
+	"keywords": [
+		"go"
+	]
+}  
